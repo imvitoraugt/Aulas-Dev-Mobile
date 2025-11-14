@@ -107,12 +107,12 @@ const styles = StyleSheet.create({
     borderColor: '#0f0f0f',
     padding: 4,
     marginVertical: 3,
-    width: "60%",
+    width: "80%",
     borderWidth: 2,
     borderRadius: 10,
     textAlign: 'center',
     fontFamily: 'monospace',
     color: 'white',
-    margin: 100
+    margin: 40
   }
 });
