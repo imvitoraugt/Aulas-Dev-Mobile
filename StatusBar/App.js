@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, StatusBar, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, Button, Alert, TextInput } from 'react-native';
 
 export default function App() {
 
@@ -47,6 +47,12 @@ export default function App() {
         <Text style = {styles.text}> Utilizando Alert.</Text>
         <Button title="Alerta com 3 botões" onPress={ () => alerta3Botoes()} />
       </View>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.caixaTexto} placeholder='Digite algo' placeholderTextColor={'white'} />
+      </View>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.caixaTextoNum} placeholder='Digite um número' placeholderTextColor={'white'} keyboardType='numeric'/>
+      </View>
     </View>
   );
 }
@@ -79,5 +85,34 @@ const styles = StyleSheet.create({
   },
   fim : {
     padding : 40,
+  },
+  inputContainer : {
+    alignSelf: 'stretch',
+    padding: 5
+  },
+  caixaTexto : {
+    height: 26,
+    borderColor: '#0f0f0f',
+    padding: 4,
+    marginVertical: 3,
+    width: "100%",
+    borderWidth: 1,
+    borderRadius: 10,
+    textAlign: 'center',
+    fontFamily: 'monospace',
+    color: 'white'
+  },
+  caixaTextoNum : {
+    height: 28,
+    borderColor: '#0f0f0f',
+    padding: 4,
+    marginVertical: 3,
+    width: "60%",
+    borderWidth: 2,
+    borderRadius: 10,
+    textAlign: 'center',
+    fontFamily: 'monospace',
+    color: 'white',
+    margin: 100
   }
 });
