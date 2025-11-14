@@ -47,10 +47,13 @@ export default function App() {
         <Text style = {styles.text}> Utilizando Alert.</Text>
         <Button title="Alerta com 3 botões" onPress={ () => alerta3Botoes()} />
       </View>
+      <Text style = {styles.text}>Utilizando TextInput.</Text>
       <View style={styles.inputContainer}>
         <TextInput style={styles.caixaTexto} placeholder='Digite algo' placeholderTextColor={'white'} />
       </View>
-      <View style={styles.inputContainer}>
+      <View style={styles.meio}/>
+      <Text style = {styles.text}> Teclado numérico.</Text>
+      <View style={styles.inputContainer} >
         <TextInput style={styles.caixaTextoNum} placeholder='Digite um número' placeholderTextColor={'white'} keyboardType='numeric'/>
       </View>
     </View>
